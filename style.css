@@ -1,0 +1,354 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 40%;
+    border:3px solid white;
+    border-radius: 100%;
+}
+.nav-list{
+   width: 50%;
+   display: flex;
+   align-items: center;
+}
+.nav-list li,
+.dropdown li{
+    list-style: none;
+    padding: 20px 20px;
+}
+.nav-list li a,
+.btn a{
+    text-decoration: none;
+    color: white;
+
+}
+.nav-list li a:hover{
+    color:grey;
+
+}
+.rightNav{
+    width:50%;
+    text-align: right;
+    padding-right: 23px;
+}
+#search{
+    padding:5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('library-photoshop-magic-misty-romantic-hd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    
+}
+
+.box-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height:80%;
+    
+}
+.firstSection{
+    height: 100vh;
+}
+.firsthalf{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+}
+.secondhalf{
+     width: 30%;
+}
+
+.secondhalf img{
+    width:90%;
+    border: 4px solid white;
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+ font-size: 32px;
+}
+
+.text-small{
+   font-size: 16px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 8px 3px;
+    border: 2px solid;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer; 
+}
+.buttons{
+    position: relative;
+    /* display: inline-block; */
+    float: right;
+}
+.buttons li a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
+    font-weight: 40;
+
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 158px;
+    z-index: 1;
+}
+.dropdown a:hover{
+    background-color: #000;
+    color: #fff;
+    padding: 12px ;
+}
+.buttons:hover .dropdown{
+    display: block;
+}
+.buttons:hover .btn{
+    background-color: transparent;
+}
+.btn-sm{
+    padding:6px 10px;
+    vertical-align: middle;
+}
+.section{
+    height: 359px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+
+}
+.section-Left{
+    flex-direction: row-reverse;
+
+}
+.fluid{
+    height: 173px;
+    width: 176px;
+}
+.dotsbox{
+    text-align: center;
+}
+h1{ 
+    text-align: center;
+    font-size: 2.1rem;
+     line-height: 2.6;
+     letter-spacing: 0.5rem;
+    /* margin-top: 25px; */
+}
+.maindiv{
+    width:70%;
+    height: 70%;
+    position: absolute;
+    left: 17%;
+    top: 125%;
+    background: url('albert.png');
+    background-size: 100% 100%;
+    box-shadow: 2px 4px 15px 10px black;
+    animation: slider 10s  infinite linear;
+}
+
+@keyframes slider{
+    0%{background: url('pexels-bich-tran-636243.jpg');background-size: 100% 100%;}
+    35%{background: url('second_quote.webp');background-size: 100% 100%;}
+    75%{background: url('third_quote.jpg');background-size: 100% 100%;}
+}
+.quotes{
+    width:100%;
+    height: 100vh;
+    /* background-image: url('5559803.webp'); */
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+}
+.about_us{
+    background-image: url('albert-einstein-01.jpg');
+    margin: 5px 0;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.about {
+    background-color: rgba(255, 255, 255, 0.132);
+    margin: 100px 150px;
+    padding:150px;
+    height: 100vh;
+}
+.text1-big{
+    text-align: center;
+    font-size: 32px;
+}
+.text1-small{
+    text-decoration: dotted;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('pexels-janko-ferlic-590493.jpg');
+    background-size: cover;
+}
+.contact .Get_in_touch{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .Get_in_touch h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact_container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact_container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contact_container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contact_container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contact_container .contactinfo .box .text h3
+{
+    font-weight: 300;
+    color: #00bcd4;
+    font-weight:bold;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translatey(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media(max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .contact_container{
+        flex-direction: column;
+    }
+    .contact_container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .contact_container .contactinfo,
+    .contactform{
+        width: 100%;
+    }
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

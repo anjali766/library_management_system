@@ -1,0 +1,61 @@
+body {
+    background-image:url("pexels-madison-inouye-3697718.jpg");
+    background-repeat:no-repeat; 
+    background-position: relative;   
+
+}
+
+.tb {
+    padding-top:9%;
+    width:50%;
+}
+h1 {
+    text-align :center;
+}
+
+form {
+    color:#472B12;
+}
+.container {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:7% 30%;
+    padding: 20px 0px 30px 0px;
+    background-color: rgba(238, 238, 238, 0.571);
+    width:40%;
+}
+a {
+    color: rgb(165,88,88);
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(222, 44, 86, 0.829);
+}
+.admin , .user {
+    margin-top: 13%;
+    margin-left: 33%;
+    width: 35%;
+}
+.form_btn{
+    /*border-color:#472B12; */
+    margin-left:17%;
+    width: 60%; height: 40px; 
+    color:#472B12; 
+    background-color: rgba(221, 94, 26, 0.909); 
+    margin-top:16px;
+}
+.form_btn:hover {
+    background-color: rgb(221, 94, 26);
+    color: white;
+}
+
+.error_msg {
+    margin: 10px 0;
+    display: block;
+    background-color: rgba(221, 94, 26, 0.909);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+}
